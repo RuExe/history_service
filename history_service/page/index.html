@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8"/>
+    <title>Метрики</title>
+
+    <link href="assets/css/main.css" rel="stylesheet">
+</head>
+<body>
+<main>
+    <div class="container">
+        <div class="wrapper">
+            <article class="data-block">
+                <header class="data-block__title">Данные</header>
+                <section class="data-block__inner">
+                    <article class="data-item">
+                        <h3 class="data-item__title">SellingProductsTotal</h3>
+                        <p class="data-item__value" id="SellingProductsTotal"></p>
+                    </article>
+                    <article class="data-item">
+                        <h3 class="data-item__title">SellingProductsOnWB</h3>
+                        <p class="data-item__value" id="SellingProductsOnWB"></p>
+                    </article>
+                    <article class="data-item">
+                        <h3 class="data-item__title">SellingQuantityOnWB</h3>
+                        <p class="data-item__value" id="SellingQuantityOnWB"></p>
+                    </article>
+                    <article class="data-item">
+                        <h3 class="data-item__title">SellingProductsOnMP</h3>
+                        <p class="data-item__value" id="SellingProductsOnMP"></p>
+                    </article>
+                    <article class="data-item">
+                        <h3 class="data-item__title">SellingQuantityOnMP</h3>
+                        <p class="data-item__value" id="SellingQuantityOnMP"></p>
+                    </article>
+                    <article class="data-item">
+                        <h3 class="data-item__title">ProductsOnWBStores</h3>
+                        <p class="data-item__value" id="ProductsOnWBStores"></p>
+                    </article>
+                    <article class="data-item">
+                        <h3 class="data-item__title">QuantityOnWBStores</h3>
+                        <p class="data-item__value" id="QuantityOnWBStores"></p>
+                    </article>
+                    <article class="data-item">
+                        <h3 class="data-item__title">ProductsOnExStores</h3>
+                        <p class="data-item__value" id="ProductsOnExStores"></p>
+                    </article>
+                    <article class="data-item">
+                        <h3 class="data-item__title">QuantityOnExStores</h3>
+                        <p class="data-item__value" id="QuantityOnExStores"></p>
+                    </article>
+                </section>
+            </article>
+            <article class="chart-block">
+                <header class="chart-block__title">Графики</header>
+                <form name="chartParams">
+                    <label>
+                        Интервал
+                        <select name="interval" id="intervalSelect">
+                            <option value="day" selected="selected">День</option>
+                            <option value="week">Неделя</option>
+                        </select>
+                    </label>
+                </form>
+                <section class="chart-block__inner">
+                    <article class="chart-item">
+                        <canvas id="line-chart-SellingProductsTotal"></canvas>
+                    </article>
+                    <article class="chart-item">
+                        <canvas id="line-chart-SellingProductsOnWB"></canvas>
+                    </article>
+                    <article class="chart-item">
+                        <canvas id="line-chart-SellingQuantityOnWB"></canvas>
+                    </article>
+                    <article class="chart-item">
+                        <canvas id="line-chart-SellingProductsOnMP"></canvas>
+                    </article>
+                    <article class="chart-item">
+                        <canvas id="line-chart-SellingQuantityOnMP"></canvas>
+                    </article>
+                    <article class="chart-item">
+                        <canvas id="line-chart-ProductsOnWBStores"></canvas>
+                    </article>
+                    <article class="chart-item">
+                        <canvas id="line-chart-QuantityOnWBStores"></canvas>
+                    </article>
+                    <article class="chart-item">
+                        <canvas id="line-chart-ProductsOnExStores"></canvas>
+                    </article>
+                    <article class="chart-item">
+                        <canvas id="line-chart-QuantityOnExStores"></canvas>
+                    </article>
+                </section>
+            </article>
+        </div>
+    </div>
+</main>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/hammerjs@2.0.8/hammer.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-zoom@1.2.1/dist/chartjs-plugin-zoom.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/moment"></script>
+<script src="https://cdn.jsdelivr.net/npm/chartjs-adapter-moment@1.0.0/dist/chartjs-adapter-moment.min.js"></script>
+<script src="assets/js/main.js"></script>
+</body>
+</html>
